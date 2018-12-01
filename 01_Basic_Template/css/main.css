@@ -1,3 +1,9 @@
+/* Global Style */
+
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
 a{
     text-decoration: none;
     color: #000000;
@@ -13,10 +19,18 @@ li{
     display: inline-block;
 }
 
+/* custom style */
+
+#wrapper{
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;    
+}
+
 #header a {
-    font-size: 40px;  
-    text-decoration: none;
-    color: #000000;
+    font-size: 46px;  
+    font-weight: bold;    
+    color: #ffffff;
 }
 
 #header{
@@ -25,32 +39,81 @@ li{
 }
 
 
-
+#nav{
+    background-color: rgba(55,55,55,1);
+    /*height: 60px;*/
+    overflow: hidden;
+}
 
 #nav ul.menus{
     float: left;      
+}
+
+#nav ul.menus li{
+    padding: 20px;
+}
+
+#nav ul.menus li.active{
+    background-color: white;
+    color: black;
+}
+
+#nav ul.menus li a{
+    color: white;
+}
+
+#nav ul.icons li {
+    padding: 20px;
+}
+
+
+#nav ul.menus li.active a{    
+    color: black;
 }
 
 #nav ul.icons{
     float: right;
 }
 
+#nav ul.icons list a{
+    color: white;
+}
+
+#main .featured 
+{
+    background-color: white;
+    padding: 40px;
+}
+
+
+
 #main .featured header h2{
     text-align: center  ;
-    padding: 50px 40px 0;
+    padding: 20px 0 40px;
+}
+
+#main .featured p{
+    margin: 35px 0px;
+}
+
+#main .featured header h2 a{
+    font-size: 30px;
 }
 
 #main .featured header a img{
-    width: 100%;
+    width: 100%;    
 }
 
 #footer{
-    display: flex;  
+    display: flex;
+    background-color: #eee;  
+    padding: 30px;
 }
 
 
 #footer .info,#footer .contect{
     flex:1;
+    padding: 30px;
 }
 
 
@@ -66,6 +129,7 @@ li{
     border: solid 3px gray;
     /*margin: 0 0 30px 0;*/
     margin-bottom: 30px;
+    background-color: #eee;
 }
 
 #footer .contact .inputs textarea{
@@ -74,12 +138,14 @@ li{
     height: 150px; 
     border: solid 3px gray;    
     margin-bottom: 30px;
+    background-color: #eee;
 }
 
 #footer .contact .submit input{    
     border: solid 3px #333;
     background-color: rgb(255,255,255);
     padding: 15px 10px;
+    background-color: #eee;
 }
 
 
@@ -106,6 +172,21 @@ li{
     
 }
 
-#copyright p,a{
+#copyright p{
     color: #cccccc;
+}
+
+#copyright p a{
+    color: #cccccc;
+}
+
+.bg{
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;    
+    background:url('../images/background.png') no-repeat fixed center;
+    z-index: -1;
+    opacity: .4;
 }
