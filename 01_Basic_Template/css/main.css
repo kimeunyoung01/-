@@ -1,0 +1,111 @@
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;  
+}
+
+li{
+    display: inline-block;
+}
+
+#header a {
+    font-size: 40px;  
+    text-decoration: none;
+    color: #000000;
+}
+
+#header{
+    text-align: center  ;
+    padding: 60px 0;
+}
+
+
+
+
+#nav ul.menus{
+    float: left;      
+}
+
+#nav ul.icons{
+    float: right;
+}
+
+#main .featured header h2{
+    text-align: center  ;
+    padding: 50px 40px 0;
+}
+
+#main .featured header a img{
+    width: 100%;
+}
+
+#footer{
+    display: flex;  
+}
+
+
+#footer .info,#footer .contect{
+    flex:1;
+}
+
+
+
+#footer .contact .inputs label{
+    
+}
+
+#footer .contact .inputs input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    border: solid 3px gray;
+    /*margin: 0 0 30px 0;*/
+    margin-bottom: 30px;
+}
+
+#footer .contact .inputs textarea{
+    box-sizing: border-box;
+    width: 100%;
+    height: 150px; 
+    border: solid 3px gray;    
+    margin-bottom: 30px;
+}
+
+#footer .contact .submit input{    
+    border: solid 3px #333;
+    background-color: rgb(255,255,255);
+    padding: 15px 10px;
+}
+
+
+#footer .info section{
+    display: flex;
+}
+
+#footer .info section h3{
+    flex: 1;
+}
+
+#footer .info section p{
+    flex: 2;
+}
+
+#footer .info section ul{
+    flex: 2;
+}
+
+#copyright{
+    background-color: rgb(33,33,33);
+    padding: 20px;
+    text-align: center;
+    
+}
+
+#copyright p,a{
+    color: #cccccc;
+}

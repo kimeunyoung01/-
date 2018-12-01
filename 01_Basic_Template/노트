@@ -1,0 +1,124 @@
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects
+$ git init
+Initialized empty Git repository in D:/Projects/.git/
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git add .
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git commit -m "initialize"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '515-03@DESKTOP-LFPJCT9.(none)')
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git config --global user.email "rola70@nate.com"
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git config --global user.name "eunyoung kim"
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git commit -m "initialize"
+[master (root-commit) 3e5c452] initialize
+ 1 file changed, 88 insertions(+)
+ create mode 100644 index.html
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git remote add origin https://github.com/kimeunyoung01/frontend-ui.git
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1.04 KiB | 1.04 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/kimeunyoung01/frontend-ui/pull/new/master
+remote:
+To https://github.com/kimeunyoung01/frontend-ui.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        01_Basic_Template/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git add .
+warning: LF will be replaced by CRLF in 01_Basic_Template/css/normalize.css.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in 01_Basic_Template/index.html.
+The file will have its original line endings in your working directory
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   01_Basic_Template/css/main.css
+        new file:   01_Basic_Template/css/normalize.css
+        new file:   01_Basic_Template/images/background.png
+        new file:   01_Basic_Template/images/img01.png
+        new file:   01_Basic_Template/index.html
+        new file:   01_Basic_Template/js/main.js
+        modified:   index.html
+
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git commit -m "basic template added"
+[master 410fca3] basic template added
+ 7 files changed, 506 insertions(+)
+ create mode 100644 01_Basic_Template/css/main.css
+ create mode 100644 01_Basic_Template/css/normalize.css
+ create mode 100644 01_Basic_Template/images/background.png
+ create mode 100644 01_Basic_Template/images/img01.png
+ create mode 100644 01_Basic_Template/index.html
+ create mode 100644 01_Basic_Template/js/main.js
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$ git push -u origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (12/12), 3.06 MiB | 2.18 MiB/s, done.
+Total 12 (delta 0), reused 0 (delta 0)
+To https://github.com/kimeunyoung01/frontend-ui.git
+   3e5c452..410fca3  master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+515-03@DESKTOP-LFPJCT9 MINGW64 /d/Projects (master)
+$
