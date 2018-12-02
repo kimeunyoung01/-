@@ -4,8 +4,8 @@
 
 ## 수업의 목표
 1. Basic Template
-   - HTML, CSS 기본
-2. Image Slider
+   - **HTML**, ***CSS 기본***
+2. Image __Slider__
 3. Git을 이용한 버전관리
 
 > FrontEnd UI 구현을 위한 HTML, CSS, JavaScript, jQuery 실습
@@ -29,3 +29,10 @@ $(document).ready(function () {
         $imgItems.eq(currentIndex++).addClass('active');
     }, 1000);
 });
+````
+
+## 링크사이트
+[Google](http://google.com)
+
+
+
